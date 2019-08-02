@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -I/usr/include/python3.5   CMakeFiles/CPythonTest.dir/main.cpp.o CMakeFiles/CPythonTest.dir/Trainer.cpp.o CMakeFiles/CPythonTest.dir/API.cpp.o  -o CPythonTest /usr/lib/x86_64-linux-gnu/libpython3.5m.so 

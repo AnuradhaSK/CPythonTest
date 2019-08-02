@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anuradha/CLionProjects/CPythonTest/API.h
+
+/home/anuradha/CLionProjects/CPythonTest/Trainer.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+cstring
+-
+sstream
+-
+Trainer.h
+/home/anuradha/CLionProjects/CPythonTest/Trainer.h
+API.h
+/home/anuradha/CLionProjects/CPythonTest/API.h
+Python.h
+/home/anuradha/CLionProjects/CPythonTest/Python.h
+
+/home/anuradha/CLionProjects/CPythonTest/Trainer.h
+stdio.h
+-
+stdlib.h
+-
+thread
+-
+
