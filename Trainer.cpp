@@ -17,7 +17,7 @@ char *converter(const std::string &s) {
 
 void Trainer::initiateTrainingLocally(std::string graphID,std::string trainingArgs){
     std::cout<<"In training initiator"<<std::endl;
-    int thread_count = 3;
+    int thread_count = 2;
     std::thread *workerThreads = new std::thread[thread_count];
     for(int i=0;i<thread_count;i++){
         std::cout<<"create thread"<<std::endl;
@@ -41,6 +41,8 @@ bool Trainer::initiateTrain(std::string trainingArgs){
     std::cout<<"string vector"<<std::endl;
     std::vector<char *> vc;
     std::transform(trainargs.begin(), trainargs.end(), std::back_inserter(vc), converter);
+    std::cout<<vc.size()<<std::endl;
+
     API::train(vc.size(), &vc[0]);
     std::cout<<"Invoke API"<<std::endl;
 }
